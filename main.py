@@ -5,13 +5,7 @@ from meu_token_brapi import token
 ticker = 'PETR4'
 url = f"https://brapi.dev/api/quote/{ticker}?token={token}"
 params1 = {
-    'interval': '5d',
-}
-params2 = {
-    'interval': '1wk'
-}
-params3 = {
-    'interval': '1mo'
+    'interval': '1mo',
 }
  
 response = requests.get(url, params=params1)
